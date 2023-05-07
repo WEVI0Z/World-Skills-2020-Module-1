@@ -1,0 +1,113 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin: 40px;
+}
+
+.digit {
+    width: 150px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.segment {
+    position: absolute;
+    width: 10px;
+    height: 130px;
+    opacity: 0.2;
+
+    border-radius: 10px;
+    background-color: red;
+}
+
+.segment--first {
+    top: 10px;
+    left: 0;
+}
+
+.segment--second {
+    top: 150px;
+    left: 0;
+}
+
+.segment--third {
+    right: 0;
+    top: 10px;
+}
+
+.segment--fourth {
+    right: 0;
+    top: 150px;
+}
+
+.segment--fifth {
+    left: 70px;
+    top: -60px;
+    transform: rotate(90deg);
+}
+
+.segment--sixth {
+    left: 70px;
+    top: 80px;
+    transform: rotate(90deg);
+}
+
+.segment--seventh {
+    left: 70px;
+    bottom: -50px;
+    transform: rotate(90deg);
+}
+
+.segment--active {
+    opacity: 1;
+}
+
+.dots {
+    position: relative;
+    margin: 20px;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+
+    background-color: red;
+    border-radius: 50%;
+}
+
+.dot:nth-child(1) {
+    top: 150px;
+    left: -15px;
+}
+.dot:nth-child(2) {
+    top: 90px;
+    left: -15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px;
+}
+
+.start {
+    color: white;
+    background-color: blue;
+}
+
+.stop {
+    color: white;
+    background-color: red;
+}
+
+.reset {
+    background-color: yellow;
+}
