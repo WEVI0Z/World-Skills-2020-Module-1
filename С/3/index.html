@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="smile smile--neutral">
+        <div class="eye eye--left"></div>
+        <div class="eye eye--right"></div>
+        <div class="mouth"></div>
+    </div>
+
+    <button class="btn">:)</button>
+    <button class="btn">:|</button>
+    <button class="btn">:(</button>
+
+    <script>
+        const btns = document.querySelectorAll(".btn");
+        const smile = document.querySelector(".smile");
+
+        btns[0].addEventListener("click", (event) => {
+            smile.classList.remove("smile--neutral");
+            smile.classList.remove("smile--sad");
+            smile.classList.add("smile--happy");
+        })
+
+        btns[1].addEventListener("click", (event) => {
+            smile.classList.add("smile--neutral");
+            smile.classList.remove("smile--sad");
+            smile.classList.remove("smile--happy");
+        })
+
+        btns[2].addEventListener("click", (event) => {
+            smile.classList.remove("smile--neutral");
+            smile.classList.add("smile--sad");
+            smile.classList.remove("smile--happy");
+        })
+    </script>
+</body>
+</html>
